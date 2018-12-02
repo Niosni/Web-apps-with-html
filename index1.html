@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Invoice</title>
+<script type="text/javascript" src="script1.js" ></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/barcodes/JsBarcode.code128.min.js"></script>
+<link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+	<div id ="top">
+		Virtual bar code:
+	</div>
+	<div>
+		<input id="input"  type="text"   value="479440520200360820048831500000000868516259619897100612">
+	</div>
+	<div id ="top">
+		<input id="decode" type="submit" value="Decode" onclick="displayInvoice()">
+	</div>
+	<div id="hidebutton">
+		<input id="toggle" type="submit" value="Hide" onclick="toggle()">
+	</div>
+	<div id="invoiceInfo" style="display:none">
+		<div id="left">
+			<div>
+				<p>Payee's IBAN:</p>
+				<p id="iban"></p>
+			</div>
+			<div>
+				<p>Amount to be paid:</p>
+				<p id="amount"></p>
+			</div>
+		</div>
+		<div id="right">
+			<div>
+				<p>Payment reference:</p>
+				<p id="ref"></p>
+			</div>
+			<div>
+				<p>Due date:</p>
+				<p id="date"></p>
+			</div>
+		</div>
+		<div id="code">BAR CODE HERE</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Zipcode</title>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDygbeSA69D2_KMz94b5ht7wUPzJKxD1PI&callback=initMap"type="text/javascript"></script>
+<script type="text/javascript" src="script2.js" ></script>
+
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<div class="left">
+	<div>Select your country:</div>
+	<div>ZIP code</div>
+	
+	</div>
+	
+	<div class="search">
+		<div class="searchleft">
+			<div>
+				<input id="country"list="countries" type="">
+			 
+				<datalist id="countries">
+				    <option value="FI">Finland</option>
+				    <option value="SE">Sweden</option>
+				    <option value="FR">France</option>
+				    <option value="DE">Germany</option>
+				</datalist>
+			</div>
+			<div>
+				<input type="text" id="zip">
+			</div>
+			<div>
+				<input type="button" value="Search"onclick="search()">
+			</div>
+		</div>
+		<div class="searchright">
+			<p>Last 10 searches:</p>
+			<div id="history">
+			</div>
+		</div>
+	</div>
+	
+	<div class="results">
+		<div id="map">
+		</div>
+	</div>
+	
+</body>
+</html>

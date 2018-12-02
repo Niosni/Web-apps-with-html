@@ -1,0 +1,36 @@
+* {
+	font-family: sans-serif;
+}
+
+.left {
+	width: 25%;
+	float: left;
+}
+
+.search {
+	width: 75%;
+	float: left;
+}
+
+.searchleft {
+	width: 50%;
+	float: left;
+}
+
+.searchright {
+	width: 50%;
+	float: left;	
+}
+
+.results {
+	width: 75%;
+	float: right;
+}
+
+#history {
+	border: 1px solid black;
+}
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
