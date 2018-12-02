@@ -29,6 +29,7 @@
 
 #history {
 	border: 1px solid black;
+	margin-bottom: 20px;
 }
 #map {
         height: 400px;  /* The height is 400 pixels */
